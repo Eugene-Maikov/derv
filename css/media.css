@@ -1,0 +1,93 @@
+@media (max-width: 1399px) {
+  /* Header =========================== */
+  .header__contact {
+    display: block;
+  }
+  .header__email {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .logo img {
+    width: 150px;
+    padding-right: 10px;
+  }
+  .header__timing {
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 1299px) {
+  .nav{
+    display: flex;
+    justify-content: flex-start;
+  }
+  .nav__item{
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 990px) {
+  .header {
+    display: none;
+  }
+  .logo,
+  .header__inner,
+  .basket-link,
+  .nav,
+  .nav-bar__right {
+    display: none;
+  }
+  .header__mobile{
+    display: block;
+  }
+  .nav-bar{
+    background: none;
+  }
+  .menu__window{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: none;
+    background-color: #f5f5f5;
+    width: 260px;
+    padding: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.25);
+  }
+  .header__mobile-inner{
+    position: relative;
+  }
+  .nav-mobile{
+    margin-bottom: 20px;
+  }
+  .nav__link{
+    color: #2e3346;
+    line-height: 30px;
+    height: 100%;
+  }
+  .header__phone-link{
+    margin-top: 5px;
+  }
+  .header__timing,
+  .header__adress,
+  .header__email,
+  .header__phone{
+    margin-bottom: 20px;
+  }
+  .icon-contact-1{
+    margin-right: 10px;
+  }
+  .nav__item{
+    width: 200px;
+  }
+  .modal__close{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+  }
+  .show{
+    display: block;
+  }
+}
