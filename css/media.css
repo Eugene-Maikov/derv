@@ -20,16 +20,6 @@
   .page__wrap {
     margin-top: 50px;
   }
-  .aside {
-    width: 100%;
-    display: flex;
-  }
-  .widget {
-    order: 1;
-  }
-  .a-nav{
-    margin-right: 20px;
-  }
 }
 
 @media (max-width: 1299px) {
@@ -39,6 +29,14 @@
   }
   .nav__item {
     margin-right: 15px;
+  }
+
+  /* Categories */
+  .category__title {
+    font-size: 16px;
+  }
+  .card__title {
+    font-size: 14px;
   }
 }
 
@@ -113,10 +111,71 @@
     right: 0;
   }
   .banners__slider {
-    padding-right: 40px;
+    margin-right: 0;
+  }
+  .banners__slider{
+    padding-right: 50px;
+  }
+  /* category */
+  .aside {
+    margin-right: 15px;
+  }
+  .category {
+    width: 100%;
+    margin-right: 15px;
+  }
+  .category:nth-child(4n) {
+    margin-right: 15px;
+  }
+  .categories__list {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2vw;
+  }
+  .cards {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2vw;
+  }
+  .card {
+    width: 100%;
   }
 }
 
+@media (max-width: 890px) {
+  .page__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .aside {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .widget {
+    display: none;
+  }
+  .news {
+    margin-left: 15px;
+    margin-top: 0;
+    width: 100%;
+  }
+  
+  .a-nav {
+    top: 0;
+  }
+  .categories {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 640px){
+  .block-top .green-btn{
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
 @media (max-width: 619px) {
   .banner__title {
     font-size: 18px;
@@ -124,10 +183,17 @@
   .banner {
     padding: 15px;
   }
+  .aside{
+    flex-direction: column;
+  }
+  .news{
+    margin-top: 30px;
+    margin-left: 0;
+  }
 }
 @media (max-width: 450px) {
   .banner__title {
-    font-size: 14px;
+    font-size: 12px;
   }
   .banner {
     padding: 15px;
@@ -135,5 +201,17 @@
   }
   .banner__logo {
     width: 120px;
+  }
+  .categories__list {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+  }
+  .cards {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
   }
 }
