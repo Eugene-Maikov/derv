@@ -10,128 +10,163 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-prod.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
     <section class="page-wrap">
         <header class="header">
-            <div class="content spacer">
-                <a href="#" class="logo">
-                    <img src="images/logo.png" alt="Лого">
-                </a>
-
-                <div class="contact contact_address">
-                    <i class="icon icon-contact-1"></i>
-
-                    <p class="contact__title">
-                        г. Название города
-                    </p>
-
-                    <p class="contact__desc">
-                        Алрес Адрес Адрес Адрес Адрес Адрес Адрес
-                    </p>
-
-                    <a href="#" class="contact__link">Схема проезда</a>
-
+            <div class="content">
+                <div class="header__inner">
+                    <a class="logo" href="#"><img src="images/logo.png" alt="Лого"></a>
+                    <div class="header__adress">
+                        <i class="icon icon-contact-1"></i>
+                        <div class="header__adress-info">
+                            <p class="header__adress-title">г. Название города</p>
+                            <p class="header__adress-desc">Приневская ул, территория завода "ГОТЭК"</p>
+                            <a href="#" class="header__adress-link">Схема проезда</a>
+                        </div>
+                    </div>
+                    <div class="header__timing">
+                        <i class="icon icon-contact-2"></i>
+                        <div class="header__timing-info">
+                            <p class="header__timing-title">Режим работы:</p>
+                            <p class="header__timing-desc">
+                                ПН-ПТ с 09.00 до 19.00 <br>
+                                СБ с 09.00 до 17.00 <br>
+                                ВС с 10.00 до 15.00</p>
+                        </div>
+                    </div>
+                    <div class="header__contact">
+                        <div class="header__email">
+                            <i class="icon icon-contact-3"></i>
+                            <a class="header__email-link" href="mailto:wood-centr@yandex.ru">wood-centr@yandex.ru</a>
+                        </div>
+                        <div class="header__phone">
+                            <i class="icon icon-contact-4"></i>
+                            <div class="header__phone-info">
+                                <a class="header__phone-number" href="tel:+78889999999">+7 (888) 999-99-99</a>
+                                <a class="header__phone-number" href="tel:+78889999999">+7 (888) 999-99-99</a>
+                                <a href="#" class="header__phone-link">Обратный звонок</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="basket-link" href="#">
+                        <i class="icon icon-basket"></i>
+                        <span class="basket-link__count">7</span>
+                    </a>
                 </div>
-                <!--contact-->
-
-                <div class="contact">
-                    <i class="icon icon-contact-2"></i>
-
-                    <p class="contact__title">
-                        Режим работы:
-                    </p>
-
-                    <p class="contact__desc">
-                        ПН-ПТ с 09.00 до 19.00 <br>
-                        СБ с 09.00 до 17.00 <br>
-                        ВС с 10.00 до 15.00
-                    </p>
-
-                </div>
-                <!--contact-->
-
-                <div class="contact contact_email">
-                    <i class="icon icon-contact-3"></i>
-                    <a href="mailto:infoinfoinfo@yandex.ru" class="contact__email">infoinfoinfo@yandex.ru</a>
-                </div>
-                <!--contact-->
-
-                <div class="contact contact_phones">
-                    <i class="icon icon-contact-4"></i>
-                    <a href="tel:+78889999999" class="contact__phone">+7 (888) 999-99-99</a>
-                    <a href="tel:+78889999999" class="contact__phone">+7 (888) 999-99-99</a>
-                    <a href="#" class="contact__link">Обратный звонок</a>
-                </div>
-                <!--contact-->
-
-                <a href="#" class="basket-link">
-                    <i class="icon icon-basket"></i>
-                    <span class="basket-link__count">7</span>
-                </a>
-
             </div>
             <!--content-->
-
         </header>
+
+
 
         <section class="nav-bar">
             <div class="content spacer">
                 <ul class="nav spacer">
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Главная</a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">О компании</a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Статьи</a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Доставка и оплата</a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Условия возврата</a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Обратная связь</a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Как проехать?</a>
-                    </li>
-
+                    <li class="nav__item"><a href="#" class="nav__link">ГЛАВНАЯ</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">О КОМПАНИИ</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">СТАТЬИ</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">ДОСТАВКА И ОПЛАТА</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">УСЛОВИЯ ВОЗВРАТА</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">ОБРАТНАЯ СВЯЗЬ</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">КАК ПРОЕХАТЬ?</a></li>
                 </ul>
-
                 <div class="nav-bar__right">
                     <a href="#" class="search-link">
                         <i class="icon icon-search"></i>
                         <span>Поиск</span>
                     </a>
-
                 </div>
                 <!--nav-bar__right-->
-
             </div>
             <!--content-->
-
         </section>
         <!--nav-bar-->
+
+        <div class="header__mobile">
+            <div class="content">
+                <div class="header__mobile-inner">
+                    <div class="logo__mobile"><img src="images/logo.png" alt=""></div>
+                    <button class="menu__burger">
+                        <img class="menu__burger-icon" src="images/menu.svg" alt="icon">
+                    </button>
+                </div>
+            </div>
+            <div class="menu__window">
+                <div class="menu__window-inner">
+                    <button class="modal__close" href="#" type="button" id="close">
+                        <img class="close__menu-btn" src="images/close-menu.svg" alt="">
+                    </button>
+                    <ul class="nav-mobile">
+                        <li class="nav__item"><a href="#" class="nav__link">ГЛАВНАЯ</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">О КОМПАНИИ</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">СТАТЬИ</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">ДОСТАВКА И ОПЛАТА</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">УСЛОВИЯ ВОЗВРАТА</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">ОБРАТНАЯ СВЯЗЬ</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">КАК ПРОЕХАТЬ?</a></li>
+                    </ul>
+                    <div class="menu__window-contact">
+                        <div class="header__adress">
+                            <i class="icon icon-contact-1"></i>
+                            <div class="header__adress-info">
+                                <p class="header__adress-title">г. Название города</p>
+                                <p class="header__adress-desc">Приневская ул, территория завода "ГОТЭК"</p>
+                                <a href="#" class="header__adress-link">Схема проезда</a>
+                            </div>
+                        </div>
+                        <div class="header__timing">
+                            <i class="icon icon-contact-2"></i>
+                            <div class="header__timing-info">
+                                <p class="header__timing-title">Режим работы:</p>
+                                <p class="header__timing-desc">
+                                    ПН-ПТ с 09.00 до 19.00 <br>
+                                    СБ с 09.00 до 17.00 <br>
+                                    ВС с 10.00 до 15.00</p>
+                            </div>
+                        </div>
+                        <div class="header__contact">
+                            <div class="header__email">
+                                <i class="icon icon-contact-3"></i>
+                                <a class="header__email-link"
+                                    href="mailto:wood-centr@yandex.ru">wood-centr@yandex.ru</a>
+                            </div>
+                            <div class="header__phone">
+                                <i class="icon icon-contact-4"></i>
+                                <div class="header__phone-info">
+                                    <a class="header__phone-number" href="tel:+78889999999">+7 (888) 999-99-99</a>
+                                    <a class="header__phone-number" href="tel:+78889999999">+7 (888) 999-99-99</a>
+                                    <a href="#" class="header__phone-link">Обратный звонок</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="basket-link" href="#">
+                            <i class="icon icon-basket"></i>
+                            <span class="basket-link__count">7</span>
+                        </a>
+                        <div class="nav-bar__right-mobile">
+                            <a href="#" class="search-link">
+                                <i class="icon icon-search"></i>
+                                <span>Поиск</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
 
         <section class="page">
             <div class="content">
                 <div class="page__wrap spacer_top">
-                    <aside class="aside">
+                    <aside class="aside aside-prod">
                         <div class="a-nav">
                             <h2>КАТЕГОРИИ ТОВАРОВ</h2>
 
@@ -225,31 +260,32 @@
                     <div class="page__content">
                         <div class="product spacer_top">
                             <div class="sliderTop">
-                                <div class="sliderTop__image">
-                                    <img src="images/product/prod-1.jpg" alt="">
-                                </div>
-                                <div class="sliderTop__image">
-                                    <img src="images/product/prod-2.jpg" alt="">
+                                <div class="sliderTop__image-inner">
+                                    <div class="sliderTop__image">
+                                        <img src="images/product/prod-1.jpg" alt="">
+                                    </div>
+                                    <div class="sliderTop__image">
+                                        <img src="images/product/prod-2.jpg" alt="">
+                                    </div>
                                 </div>
                                 <div class="sliderTop__inner">
-                                    <div class="sliderTop__item sliderTop__item--arrow">
-                                        <img src="images/product/arrow-left .png" alt="">
+                                    <div class="sliderTop__item-inner">
+                                        <div class="sliderTop__item">
+                                            <img class="sliderTop__item-img" src="images/product/prod-2.jpg" alt="">
+                                        </div>
+                                        <div class="sliderTop__item">
+                                            <img class="sliderTop__item-img" src="images/product/prod-2.jpg" alt="">
+                                        </div>
+                                        <div class="sliderTop__item">
+                                            <img class="sliderTop__item-img" src="images/product/prod-2.jpg" alt="">
+                                        </div>
                                     </div>
-                                    <div class="sliderTop__item">
-                                        <img class="sliderTop__item-img" src="images/product/prod-2.jpg" alt="">
-                                    </div>
-                                    <div class="sliderTop__item">
-                                        <img class="sliderTop__item-img" src="images/product/prod-2.jpg" alt="">
-                                    </div>
-                                    <div class="sliderTop__item">
-                                        <img class="sliderTop__item-img" src="images/product/prod-2.jpg" alt="">
-                                    </div>
-                                    <div class="sliderTop__item sliderTop__item--arrow">
+                                    <div class="sliderTop__item--arrow">
                                         <img src="images/product/arrow-left .png" alt="">
                                     </div>
                                 </div>
                             </div>
-                            
+
 
                             <div class="product__right">
                                 <h1>Забежная г-образная лестница К-001м-1</h1>
@@ -402,10 +438,65 @@
                         <img src="images/product/arrow-right.png" alt="">
                     </div>
                     <div class="catalog-slider">
-                        <div class="card mr0">
+                        <div class="card mr0 card-1">
                             <div class="card__body">
                                 <a href="#" class="card__photo">
-                                    <img src="images/catalog/card-1.jpg" alt="Тумба из массива сосны 1000х560х720 под покраску">
+                                    <img src="images/catalog/card-1.jpg"
+                                        alt="Тумба из массива сосны 1000х560х720 под покраску">
+                                </a>
+                                <a href="#" class="card__title">
+                                    Тумба из массива сосны 1000х560х720 под покраску
+                                </a>
+                                <p class="card__price">
+                                    10 356 ₽
+                                </p>
+                            </div>
+                            <!--card__body-->
+                            <div class="card__hv">
+                                <div class="card__bottom">
+                                    <button class="green-btn card__add">
+                                        <i class="icon icon-add"></i>
+                                        <span>Добавить в корзину</span>
+                                    </button>
+                                    <a href="#" class="card__link">Подробнее</a>
+                                </div>
+                                <!--card__bottom-->
+                            </div>
+                            <!--card__hv-->
+                        </div>
+                        <!--card-->
+                        <div class="card mr0 card-2">
+                            <div class="card__body">
+                                <a href="#" class="card__photo">
+                                    <img src="images/catalog/card-1.jpg"
+                                        alt="Тумба из массива сосны 1000х560х720 под покраску">
+                                </a>
+                                <a href="#" class="card__title">
+                                    Тумба из массива сосны 1000х560х720 под покраску
+                                </a>
+                                <p class="card__price">
+                                    10 356 ₽
+                                </p>
+                            </div>
+                            <!--card__body-->
+                            <div class="card__hv">
+                                <div class="card__bottom">
+                                    <button class="green-btn card__add">
+                                        <i class="icon icon-add"></i>
+                                        <span>Добавить в корзину</span>
+                                    </button>
+                                    <a href="#" class="card__link">Подробнее</a>
+                                </div>
+                                <!--card__bottom-->
+                            </div>
+                            <!--card__hv-->
+                        </div>
+                        <!--card-->
+                        <div class="card mr0 card-3">
+                            <div class="card__body">
+                                <a href="#" class="card__photo">
+                                    <img src="images/catalog/card-1.jpg"
+                                        alt="Тумба из массива сосны 1000х560х720 под покраску">
                                 </a>
                                 <a href="#" class="card__title">
                                     Тумба из массива сосны 1000х560х720 под покраску
@@ -431,7 +522,8 @@
                         <div class="card mr0">
                             <div class="card__body">
                                 <a href="#" class="card__photo">
-                                    <img src="images/catalog/card-1.jpg" alt="Тумба из массива сосны 1000х560х720 под покраску">
+                                    <img src="images/catalog/card-1.jpg"
+                                        alt="Тумба из массива сосны 1000х560х720 под покраску">
                                 </a>
                                 <a href="#" class="card__title">
                                     Тумба из массива сосны 1000х560х720 под покраску
@@ -457,59 +549,8 @@
                         <div class="card mr0">
                             <div class="card__body">
                                 <a href="#" class="card__photo">
-                                    <img src="images/catalog/card-1.jpg" alt="Тумба из массива сосны 1000х560х720 под покраску">
-                                </a>
-                                <a href="#" class="card__title">
-                                    Тумба из массива сосны 1000х560х720 под покраску
-                                </a>
-                                <p class="card__price">
-                                    10 356 ₽
-                                </p>
-                            </div>
-                            <!--card__body-->
-                            <div class="card__hv">
-                                <div class="card__bottom">
-                                    <button class="green-btn card__add">
-                                        <i class="icon icon-add"></i>
-                                        <span>Добавить в корзину</span>
-                                    </button>
-                                    <a href="#" class="card__link">Подробнее</a>
-                                </div>
-                                <!--card__bottom-->
-                            </div>
-                            <!--card__hv-->
-                        </div>
-                        <!--card-->
-                        <div class="card mr0">
-                            <div class="card__body">
-                                <a href="#" class="card__photo">
-                                    <img src="images/catalog/card-1.jpg" alt="Тумба из массива сосны 1000х560х720 под покраску">
-                                </a>
-                                <a href="#" class="card__title">
-                                    Тумба из массива сосны 1000х560х720 под покраску
-                                </a>
-                                <p class="card__price">
-                                    10 356 ₽
-                                </p>
-                            </div>
-                            <!--card__body-->
-                            <div class="card__hv">
-                                <div class="card__bottom">
-                                    <button class="green-btn card__add">
-                                        <i class="icon icon-add"></i>
-                                        <span>Добавить в корзину</span>
-                                    </button>
-                                    <a href="#" class="card__link">Подробнее</a>
-                                </div>
-                                <!--card__bottom-->
-                            </div>
-                            <!--card__hv-->
-                        </div>
-                        <!--card-->
-                        <div class="card mr0">
-                            <div class="card__body">
-                                <a href="#" class="card__photo">
-                                    <img src="images/catalog/card-1.jpg" alt="Тумба из массива сосны 1000х560х720 под покраску">
+                                    <img src="images/catalog/card-1.jpg"
+                                        alt="Тумба из массива сосны 1000х560х720 под покраску">
                                 </a>
                                 <a href="#" class="card__title">
                                     Тумба из массива сосны 1000х560х720 под покраску
@@ -537,7 +578,7 @@
                         <img src="images/product/arrow-left .png" alt="">
                     </div>
                 </div>
-                
+
             </div>
             <!--content-->
 
@@ -546,6 +587,7 @@
 
     </section>
     <!--page-wrap-->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
