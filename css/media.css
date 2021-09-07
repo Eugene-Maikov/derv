@@ -20,6 +20,13 @@
   .page__wrap {
     margin-top: 50px;
   }
+  /* Catalog */
+  .spacer > *{
+    margin: 0 auto;
+  }
+  .tags__link{
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 1299px) {
@@ -142,6 +149,11 @@
   .card {
     width: 100%;
   }
+
+  /* Catalog */
+  .page__content-fl{
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 890px) {
@@ -169,11 +181,52 @@
   .categories {
     margin-top: 50px;
   }
+
+  /* Catalog */
+  .steps__list {
+    margin-top: 35px;
+  }
+  .icon-steps-colon{
+    margin: 0;
+  }
 }
 @media (max-width: 640px){
   .block-top .green-btn{
     margin-left: 0;
     margin-top: 15px;
+  }
+  .page__content-fl,
+  .types__photo{
+    width: 100%;
+  }
+  .cards-catalog{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+  }
+  
+  /* About */
+  .icon-steps-colon{
+    display: none;
+  }
+  .advantages__list {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+  }
+  .advantage{
+    width: 100%;
+  }
+  .info__title{
+    font-size: 16px;
+  }
+  .info__desc {
+    font-size: 14px;
+  }
+  .info{
+    padding: 34px 16px 33px 175px;
   }
 }
 @media (max-width: 619px) {
@@ -189,6 +242,18 @@
   .news{
     margin-top: 30px;
     margin-left: 0;
+  }
+
+  /* Catalog */
+  .types__content{
+    margin-top: 30px;
+  }
+  .types__info{
+    width: 100%;
+    font-size: 14px;
+  }
+  .types__title{
+    width: 260px;
   }
 }
 @media (max-width: 450px) {
@@ -213,5 +278,38 @@
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2vw;
+  }
+
+  /* Catalog */
+  .types__content{
+    flex-direction: column;
+  }
+  .types__info,
+  .types__logo{
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  /* About */
+  .about p{
+    font-size: 14px;
+  }
+  .steps__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .step{
+    margin-top: 20px;
+  }
+  .advantage__title {
+    font-size: 14px;
+  }
+  .content_small .title-center{
+    font-size: 16px;
+  }
+  .info{
+    padding: 15px;
+    padding-top: 200px;
   }
 }

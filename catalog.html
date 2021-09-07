@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,583 +8,691 @@
     <title>Деревяшка</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
+
 <body>
-<section class="page-wrap">
-    <header class="header">
-        <div class="content spacer">
-            <a href="#" class="logo">
-                <img src="images/logo.png" alt="Лого">
-            </a>
+    <section class="page-wrap">
+        <header class="header">
+            <div class="content">
+                <div class="header__inner">
+                    <a class="logo" href="#"><img src="images/logo.png" alt="Лого"></a>
+                    <div class="header__adress">
+                        <i class="icon icon-contact-1"></i>
+                        <div class="header__adress-info">
+                            <p class="header__adress-title">г. Название города</p>
+                            <p class="header__adress-desc">Приневская ул, территория завода "ГОТЭК"</p>
+                            <a href="#" class="header__adress-link">Схема проезда</a>
+                        </div>
+                    </div>
+                    <div class="header__timing">
+                        <i class="icon icon-contact-2"></i>
+                        <div class="header__timing-info">
+                            <p class="header__timing-title">Режим работы:</p>
+                            <p class="header__timing-desc">
+                                ПН-ПТ с 09.00 до 19.00 <br>
+                                СБ с 09.00 до 17.00 <br>
+                                ВС с 10.00 до 15.00</p>
+                        </div>
+                    </div>
+                    <div class="header__contact">
+                        <div class="header__email">
+                            <i class="icon icon-contact-3"></i>
+                            <a class="header__email-link" href="mailto:wood-centr@yandex.ru">wood-centr@yandex.ru</a>
+                        </div>
+                        <div class="header__phone">
+                            <i class="icon icon-contact-4"></i>
+                            <div class="header__phone-info">
+                                <a class="header__phone-number" href="tel:+78889999999">+7 (888) 999-99-99</a>
+                                <a class="header__phone-number" href="tel:+78889999999">+7 (888) 999-99-99</a>
+                                <a href="#" class="header__phone-link">Обратный звонок</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="basket-link" href="#">
+                        <i class="icon icon-basket"></i>
+                        <span class="basket-link__count">7</span>
+                    </a>
+                </div>
+            </div>
+            <!--content-->
+        </header>
 
-            <div class="contact contact_address">
-                <i class="icon icon-contact-1"></i>
 
-                <p class="contact__title">
-                    г. Название города
-                </p>
 
-                <p class="contact__desc">
-                    Алрес Адрес Адрес Адрес Адрес Адрес Адрес
-                </p>
+        <section class="nav-bar">
+            <div class="content spacer">
+                <ul class="nav spacer">
+                    <li class="nav__item"><a href="#" class="nav__link">ГЛАВНАЯ</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">О КОМПАНИИ</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">СТАТЬИ</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">ДОСТАВКА И ОПЛАТА</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">УСЛОВИЯ ВОЗВРАТА</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">ОБРАТНАЯ СВЯЗЬ</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">КАК ПРОЕХАТЬ?</a></li>
+                </ul>
+                <div class="nav-bar__right">
+                    <a href="#" class="search-link">
+                        <i class="icon icon-search"></i>
+                        <span>Поиск</span>
+                    </a>
+                </div>
+                <!--nav-bar__right-->
+            </div>
+            <!--content-->
+        </section>
+        <!--nav-bar-->
 
-                <a href="#" class="contact__link">Схема проезда</a>
-
-            </div><!--contact-->
-
-            <div class="contact">
-                <i class="icon icon-contact-2"></i>
-
-                <p class="contact__title">
-                    Режим работы:
-                </p>
-
-                <p class="contact__desc">
-                    ПН-ПТ с 09.00 до 19.00 <br>
-                    СБ с 09.00 до 17.00 <br>
-                    ВС с 10.00 до 15.00
-                </p>
-
-            </div><!--contact-->
-
-            <div class="contact contact_email">
-                <i class="icon icon-contact-3"></i>
-                <a href="mailto:infoinfoinfo@yandex.ru" class="contact__email">infoinfoinfo@yandex.ru</a>
-            </div><!--contact-->
-
-            <div class="contact contact_phones">
-                <i class="icon icon-contact-4"></i>
-                <a href="tel:+78889999999" class="contact__phone">+7 (888) 999-99-99</a>
-                <a href="tel:+78889999999" class="contact__phone">+7 (888) 999-99-99</a>
-                <a href="#" class="contact__link">Обратный звонок</a>
-            </div><!--contact-->
-
-            <a href="#" class="basket-link">
-                <i class="icon icon-basket"></i>
-                <span class="basket-link__count">7</span>
-            </a>
-
-        </div><!--content-->
-
-    </header>
-
-    <section class="nav-bar">
-        <div class="content spacer">
-            <ul class="nav spacer">
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Главная</a>
-                </li>
-
-                <li class="nav__item">
-                    <a href="#" class="nav__link">О компании</a>
-                </li>
-
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Статьи</a>
-                </li>
-
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Доставка и оплата</a>
-                </li>
-
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Условия возврата</a>
-                </li>
-
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Обратная связь</a>
-                </li>
-
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Как проехать?</a>
-                </li>
-
-            </ul>
-
-            <div class="nav-bar__right">
-                <a href="#" class="search-link">
-                    <i class="icon icon-search"></i>
-                    <span>Поиск</span>
-                </a>
-
-            </div><!--nav-bar__right-->
-
-        </div><!--content-->
-
-    </section><!--nav-bar-->
-
-    <section class="page">
-        <div class="content">
-            <div class="page__wrap spacer_top">
-                <aside class="aside">
-                    <div class="a-nav">
-                        <h2>КАТЕГОРИИ ТОВАРОВ</h2>
-
-                        <ul class="a-nav__list">
-                            <li class="a-nav__item">
-                                <a href="#" class="a-nav__link">Спецпредложение</a>
-                            </li>
-
-                            <li class="a-nav__item">
-                                <a href="#" class="a-nav__link">Мебельный щит из берёзы</a>
-                            </li>
-
-                            <li class="a-nav__item a-nav__item_sec open">
-                                <span class="a-nav__link">Лестницы для дома и дачи</span>
-                                <ul class="a-nav__sec">
-                                    <li>
-                                        <a href="#">Деревянные лестницы</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">Чердачные лестницы</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">Винтовые лестницы</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">Лестницы под заказ</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">Ворота безопасности</a>
-                                    </li>
-
-                                </ul>
-
-                            </li>
-
-                            <li class="a-nav__item a-nav__item_sec">
-                                <span class="a-nav__link">Элементы для лестниц</span>
-                            </li>
-
-                            <li class="a-nav__item">
-                                <a href="#" class="a-nav__link">Кухни из массива сосны</a>
-                            </li>
-
-                            <li class="a-nav__item a-nav__item_sec">
-                                <span class="a-nav__link">Мебель для спальни</span>
-                            </li>
-
-                            <li class="a-nav__item a-nav__item_sec">
-                                <span class="a-nav__link">Деревянные двери</span>
-                            </li>
-
-                            <li class="a-nav__item a-nav__item_sec">
-                                <span class="a-nav__link">Клееные изделия из сосны</span>
-                            </li>
-
-                            <li class="a-nav__item">
-                                <a href="#" class="a-nav__link">Клееные изделия из дуба</a>
-                            </li>
-
-                            <li class="a-nav__item">
-                                <a href="#" class="a-nav__link">Клееные изделия из бука</a>
-                            </li>
-
-                            <li class="a-nav__item a-nav__item_sec">
-                                <span class="a-nav__link">Строганные материалы</span>
-                            </li>
-
-                            <li class="a-nav__item a-nav__item_sec">
-                                <span class="a-nav__link">Фасады и жалюзи</span>
-                            </li>
-
-                            <li class="a-nav__item a-nav__item_sec">
-                                <span class="a-nav__link">Погонаж</span>
-                            </li>
-
-                            <li class="a-nav__item a-nav__item_sec">
-                                <span class="a-nav__link">Другое</span>
-                            </li>
-
-                        </ul>
-
-                    </div><!--a-nav-->
-
-                </aside>
-
-                <div class="page__content">
-                    <div class="block-top spacer">
-                        <h2>
-                            МЕБЕЛЬНЫЙ ЩИТ ИЗ СОСНЫ
-                        </h2>
-
-                        <div class="present">
-                            <a href="#" class="present__link active">
-                                <i class="icon icon-present-1"></i>
+        <div class="header__mobile">
+            <div class="content">
+                <div class="header__mobile-inner">
+                    <div class="logo__mobile"><img src="images/logo.png" alt=""></div>
+                    <button class="menu__burger">
+                        <img class="menu__burger-icon" src="images/menu.svg" alt="icon">
+                    </button>
+                </div>
+            </div>
+            <div class="menu__window">
+                <div class="menu__window-inner">
+                    <button class="modal__close" href="#" type="button" id="close">
+                        <img class="close__menu-btn" src="images/close-menu.svg" alt="">
+                    </button>
+                    <ul class="nav-mobile">
+                        <li class="nav__item"><a href="#" class="nav__link">ГЛАВНАЯ</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">О КОМПАНИИ</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">СТАТЬИ</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">ДОСТАВКА И ОПЛАТА</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">УСЛОВИЯ ВОЗВРАТА</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">ОБРАТНАЯ СВЯЗЬ</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">КАК ПРОЕХАТЬ?</a></li>
+                    </ul>
+                    <div class="menu__window-contact">
+                        <div class="header__adress">
+                            <i class="icon icon-contact-1"></i>
+                            <div class="header__adress-info">
+                                <p class="header__adress-title">г. Название города</p>
+                                <p class="header__adress-desc">Приневская ул, территория завода "ГОТЭК"</p>
+                                <a href="#" class="header__adress-link">Схема проезда</a>
+                            </div>
+                        </div>
+                        <div class="header__timing">
+                            <i class="icon icon-contact-2"></i>
+                            <div class="header__timing-info">
+                                <p class="header__timing-title">Режим работы:</p>
+                                <p class="header__timing-desc">
+                                    ПН-ПТ с 09.00 до 19.00 <br>
+                                    СБ с 09.00 до 17.00 <br>
+                                    ВС с 10.00 до 15.00</p>
+                            </div>
+                        </div>
+                        <div class="header__contact">
+                            <div class="header__email">
+                                <i class="icon icon-contact-3"></i>
+                                <a class="header__email-link"
+                                    href="mailto:wood-centr@yandex.ru">wood-centr@yandex.ru</a>
+                            </div>
+                            <div class="header__phone">
+                                <i class="icon icon-contact-4"></i>
+                                <div class="header__phone-info">
+                                    <a class="header__phone-number" href="tel:+78889999999">+7 (888) 999-99-99</a>
+                                    <a class="header__phone-number" href="tel:+78889999999">+7 (888) 999-99-99</a>
+                                    <a href="#" class="header__phone-link">Обратный звонок</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="basket-link" href="#">
+                            <i class="icon icon-basket"></i>
+                            <span class="basket-link__count">7</span>
+                        </a>
+                        <div class="nav-bar__right-mobile">
+                            <a href="#" class="search-link">
+                                <i class="icon icon-search"></i>
+                                <span>Поиск</span>
                             </a>
+                        </div>
+                    </div>
+                </div>
 
-                            <a href="#" class="present__link">
-                                <i class="icon icon-present-2"></i>
-                            </a>
+            </div>
 
-                        </div><!--present-->
+        </div>
 
-                    </div><!--block-top-->
+        <section class="page">
+            <div class="content">
+                <div class="page__wrap spacer_top">
+                    <aside class="aside">
+                        <div class="a-nav">
+                            <h2>КАТЕГОРИИ ТОВАРОВ</h2>
 
-                    <div class="choice">
-                        <p class="choice__desc">
-                            Мебельный щит из сосны и ели отличается средней твердостью
-                            древесины, за счет чего он легко обрабатывается и
-                            подвергается другим манипуляциям.  Распространенные
-                            сферы применения: мебельная промышленность и дизайнерское
-                            оформление помещений.
-                        </p>
+                            <ul class="a-nav__list">
+                                <li class="a-nav__item">
+                                    <a href="#" class="a-nav__link">Спецпредложение</a>
+                                </li>
 
-                        <p class="choice__list-title">
-                            Всегда в наличии огромный выбор размеров хвойного мебельного щита:
-                        </p>
+                                <li class="a-nav__item">
+                                    <a href="#" class="a-nav__link">Мебельный щит из берёзы</a>
+                                </li>
 
-                        <ul class="choice__list">
-                            <li>
-                                толщина 18, 28, 40 мм
-                            </li>
+                                <li class="a-nav__item a-nav__item_sec open">
+                                    <span class="a-nav__link">Лестницы для дома и дачи</span>
+                                    <ul class="a-nav__sec">
+                                        <li>
+                                            <a href="#">Деревянные лестницы</a>
+                                        </li>
 
-                            <li>
-                                ширина 200, 250, 300, 400, 500, 600, 800 мм
-                            </li>
+                                        <li>
+                                            <a href="#">Чердачные лестницы</a>
+                                        </li>
 
-                            <li>
-                                длина 800, 1000, 1200, 1500, 1800, 2000, 2500, 3000 мм
-                            </li>
+                                        <li>
+                                            <a href="#">Винтовые лестницы</a>
+                                        </li>
 
-                        </ul>
+                                        <li>
+                                            <a href="#">Лестницы под заказ</a>
+                                        </li>
 
-                        <p class="choice__desc">
-                            Также мы можем произвести мебельный щит по Вашим размерам,
-                            оформив заказ на производство, или отпилить излишки  от
-                            имеющихся в наличии щитов прямо на складе в Спб. Благодаря
-                            оборудованию с ЧПУ, которым оснащено наше производство,
-                            возможно изготовление мебельных щитов любой формы.
-                        </p>
+                                        <li>
+                                            <a href="#">Ворота безопасности</a>
+                                        </li>
 
-                        <div class="types spacer">
-                            <p class="types__title">
-                                Категории мебельного щита из сосны и ели
+                                    </ul>
+
+                                </li>
+
+                                <li class="a-nav__item a-nav__item_sec">
+                                    <span class="a-nav__link">Элементы для лестниц</span>
+                                </li>
+
+                                <li class="a-nav__item">
+                                    <a href="#" class="a-nav__link">Кухни из массива сосны</a>
+                                </li>
+
+                                <li class="a-nav__item a-nav__item_sec">
+                                    <span class="a-nav__link">Мебель для спальни</span>
+                                </li>
+
+                                <li class="a-nav__item a-nav__item_sec">
+                                    <span class="a-nav__link">Деревянные двери</span>
+                                </li>
+
+                                <li class="a-nav__item a-nav__item_sec">
+                                    <span class="a-nav__link">Клееные изделия из сосны</span>
+                                </li>
+
+                                <li class="a-nav__item">
+                                    <a href="#" class="a-nav__link">Клееные изделия из дуба</a>
+                                </li>
+
+                                <li class="a-nav__item">
+                                    <a href="#" class="a-nav__link">Клееные изделия из бука</a>
+                                </li>
+
+                                <li class="a-nav__item a-nav__item_sec">
+                                    <span class="a-nav__link">Строганные материалы</span>
+                                </li>
+
+                                <li class="a-nav__item a-nav__item_sec">
+                                    <span class="a-nav__link">Фасады и жалюзи</span>
+                                </li>
+
+                                <li class="a-nav__item a-nav__item_sec">
+                                    <span class="a-nav__link">Погонаж</span>
+                                </li>
+
+                                <li class="a-nav__item a-nav__item_sec">
+                                    <span class="a-nav__link">Другое</span>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                        <!--a-nav-->
+
+                    </aside>
+
+                    <div class="page__content page__content-fl">
+                        <div class="block-top spacer">
+                            <h2>
+                                МЕБЕЛЬНЫЙ ЩИТ ИЗ СОСНЫ
+                            </h2>
+
+                            <div class="present">
+                                <a href="#" class="present__link active">
+                                    <i class="icon icon-present-1"></i>
+                                </a>
+
+                                <a href="#" class="present__link">
+                                    <i class="icon icon-present-2"></i>
+                                </a>
+
+                            </div>
+                            <!--present-->
+
+                        </div>
+                        <!--block-top-->
+
+                        <div class="choice">
+                            <p class="choice__desc">
+                                Мебельный щит из сосны и ели отличается средней твердостью
+                                древесины, за счет чего он легко обрабатывается и
+                                подвергается другим манипуляциям. Распространенные
+                                сферы применения: мебельная промышленность и дизайнерское
+                                оформление помещений.
                             </p>
 
-                            <p class="types__info">
-                                Клееные изделия высшего качества из
-                                натуральной древесины от “Деревяшка”
+                            <p class="choice__list-title">
+                                Всегда в наличии огромный выбор размеров хвойного мебельного щита:
                             </p>
 
-                            <img src="images/types-logo.png" alt="Лого" class="types__logo">
-                            <img src="images/types.png" alt="фото" class="types__photo">
+                            <ul class="choice__list">
+                                <li>
+                                    толщина 18, 28, 40 мм
+                                </li>
 
-                        </div><!--types-->
+                                <li>
+                                    ширина 200, 250, 300, 400, 500, 600, 800 мм
+                                </li>
 
-                    </div><!--choice-->
+                                <li>
+                                    длина 800, 1000, 1200, 1500, 1800, 2000, 2500, 3000 мм
+                                </li>
 
-                    <div class="catalog">
-                        <div class="tags">
-                            <span class="tags__title">Часто спрашивают:</span>
-                            <div class="tags__list">
-                                <a href="#" class="tags__link">из дуба</a>
-                                <a href="#" class="tags__link">из бука</a>
-                                <a href="#" class="tags__link">сосна 18 мм</a>
-                                <a href="#" class="tags__link">сосна 28 мм</a>
-                                <a href="#" class="tags__link">сосна 40 мм</a>
-                                <a href="#" class="tags__link">сращенный</a>
-                                <a href="#" class="tags__link">цельноламельный</a>
-                            </div><!--tags__list-->
+                            </ul>
 
-                        </div><!--tags-->
+                            <p class="choice__desc">
+                                Также мы можем произвести мебельный щит по Вашим размерам,
+                                оформив заказ на производство, или отпилить излишки от
+                                имеющихся в наличии щитов прямо на складе в Спб. Благодаря
+                                оборудованию с ЧПУ, которым оснащено наше производство,
+                                возможно изготовление мебельных щитов любой формы.
+                            </p>
 
-                        <p class="catalog__count">
-                            Показано 1–12 из 500 результатов
-                        </p>
-
-                        <div class="cards flex-container">
-                            <div class="card">
-                                <div class="card__body">
-                                    <a href="#" class="card__photo">
-                                        <img src="images/catalog/card-1.jpg" alt="Тумба из массива сосны 1000х560х720 под покраску">
-                                    </a>
-
-                                    <a href="#" class="card__title">
-                                        Тумба из массива сосны 1000х560х720 под покраску
-                                    </a>
-
-                                    <p class="card__price">
-                                        10 356 ₽
+                            <div class="types spacer">
+                                <p class="types__title">
+                                    Категории мебельного щита из сосны и ели
+                                </p>
+                                <div class="types__content">
+                                    <p class="types__info">
+                                        Клееные изделия высшего качества из
+                                        натуральной древесины от “Деревяшка”
                                     </p>
-
-                                </div><!--card__body-->
-
-                                <div class="card__hv">
-                                    <div class="card__bottom">
-                                        <button class="green-btn card__add">
-                                            <i class="icon icon-add"></i>
-                                            <span>Добавить в корзину</span>
-                                        </button>
-                                        <a href="#" class="card__link">Подробнее</a>
-
-                                    </div><!--card__bottom-->
-
-                                </div><!--card__hv-->
-
-                            </div><!--card-->
-
-                            <div class="card">
-                                <div class="card__body">
-                                    <a href="#" class="card__photo">
-                                        <img src="images/catalog/card-1.jpg" alt="Тумба из массива сосны 1000х560х720 под покраску">
-                                    </a>
-
-                                    <a href="#" class="card__title">
-                                        Тумба из массива сосны 1000х560х720 под покраску
-                                    </a>
-
-                                    <p class="card__price">
-                                        10 356 ₽
-                                    </p>
-
-                                </div><!--card__body-->
-
-                                <div class="card__hv">
-                                    <div class="card__bottom">
-                                        <button class="green-btn card__add">
-                                            <i class="icon icon-add"></i>
-                                            <span>Добавить в корзину</span>
-                                        </button>
-                                        <a href="#" class="card__link">Подробнее</a>
-
-                                    </div><!--card__bottom-->
-
-                                </div><!--card__hv-->
-
-                            </div><!--card-->
-
-                            <div class="card">
-                                <div class="card__body">
-                                    <a href="#" class="card__photo">
-                                        <img src="images/catalog/card-1.jpg" alt="Тумба из массива сосны 1000х560х720 под покраску">
-                                    </a>
-
-                                    <a href="#" class="card__title">
-                                        Тумба из массива сосны 1000х560х720 под покраску
-                                    </a>
-
-                                    <p class="card__price">
-                                        10 356 ₽
-                                    </p>
-
-                                </div><!--card__body-->
-
-                                <div class="card__hv">
-                                    <div class="card__bottom">
-                                        <button class="green-btn card__add">
-                                            <i class="icon icon-add"></i>
-                                            <span>Добавить в корзину</span>
-                                        </button>
-                                        <a href="#" class="card__link">Подробнее</a>
-
-                                    </div><!--card__bottom-->
-
-                                </div><!--card__hv-->
-
-                            </div><!--card-->
-
-                            <div class="card">
-                                <div class="card__body">
-                                    <a href="#" class="card__photo">
-                                        <img src="images/catalog/card-1.jpg" alt="Тумба из массива сосны 1000х560х720 под покраску">
-                                    </a>
-
-                                    <a href="#" class="card__title">
-                                        Тумба из массива сосны 1000х560х720 под покраску
-                                    </a>
-
-                                    <p class="card__price">
-                                        10 356 ₽
-                                    </p>
-
-                                </div><!--card__body-->
-
-                                <div class="card__hv">
-                                    <div class="card__bottom">
-                                        <button class="green-btn card__add">
-                                            <i class="icon icon-add"></i>
-                                            <span>Добавить в корзину</span>
-                                        </button>
-                                        <a href="#" class="card__link">Подробнее</a>
-
-                                    </div><!--card__bottom-->
-
-                                </div><!--card__hv-->
-
-                            </div><!--card-->
-
-                            <div class="card">
-                                <div class="card__body">
-                                    <a href="#" class="card__photo">
-                                        <img src="images/catalog/card-1.jpg" alt="Тумба из массива сосны 1000х560х720 под покраску">
-                                    </a>
-
-                                    <a href="#" class="card__title">
-                                        Тумба из массива сосны 1000х560х720 под покраску
-                                    </a>
-
-                                    <p class="card__price">
-                                        10 356 ₽
-                                    </p>
-
-                                </div><!--card__body-->
-
-                                <div class="card__hv">
-                                    <div class="card__bottom">
-                                        <button class="green-btn card__add">
-                                            <i class="icon icon-add"></i>
-                                            <span>Добавить в корзину</span>
-                                        </button>
-                                        <a href="#" class="card__link">Подробнее</a>
-
-                                    </div><!--card__bottom-->
-
-                                </div><!--card__hv-->
-
-                            </div><!--card-->
-
-                            <div class="card">
-                                <div class="card__body">
-                                    <a href="#" class="card__photo">
-                                        <img src="images/catalog/card-1.jpg" alt="Тумба из массива сосны 1000х560х720 под покраску">
-                                    </a>
-
-                                    <a href="#" class="card__title">
-                                        Тумба из массива сосны 1000х560х720 под покраску
-                                    </a>
-
-                                    <p class="card__price">
-                                        10 356 ₽
-                                    </p>
-
-                                </div><!--card__body-->
-
-                                <div class="card__hv">
-                                    <div class="card__bottom">
-                                        <button class="green-btn card__add">
-                                            <i class="icon icon-add"></i>
-                                            <span>Добавить в корзину</span>
-                                        </button>
-                                        <a href="#" class="card__link">Подробнее</a>
-
-                                    </div><!--card__bottom-->
-
-                                </div><!--card__hv-->
-
-                            </div><!--card-->
-
-                            <div class="card">
-                                <div class="card__body">
-                                    <a href="#" class="card__photo">
-                                        <img src="images/catalog/card-1.jpg" alt="Тумба из массива сосны 1000х560х720 под покраску">
-                                    </a>
-
-                                    <a href="#" class="card__title">
-                                        Тумба из массива сосны 1000х560х720 под покраску
-                                    </a>
-
-                                    <p class="card__price">
-                                        10 356 ₽
-                                    </p>
-
-                                </div><!--card__body-->
-
-                                <div class="card__hv">
-                                    <div class="card__bottom">
-                                        <button class="green-btn card__add">
-                                            <i class="icon icon-add"></i>
-                                            <span>Добавить в корзину</span>
-                                        </button>
-                                        <a href="#" class="card__link">Подробнее</a>
-
-                                    </div><!--card__bottom-->
-
-                                </div><!--card__hv-->
-
-                            </div><!--card-->
-
-                            <div class="card">
-                                <div class="card__body">
-                                    <a href="#" class="card__photo">
-                                        <img src="images/catalog/card-1.jpg" alt="Тумба из массива сосны 1000х560х720 под покраску">
-                                    </a>
-
-                                    <a href="#" class="card__title">
-                                        Тумба из массива сосны 1000х560х720 под покраску
-                                    </a>
-
-                                    <p class="card__price">
-                                        10 356 ₽
-                                    </p>
-
-                                </div><!--card__body-->
-
-                                <div class="card__hv">
-                                    <div class="card__bottom">
-                                        <button class="green-btn card__add">
-                                            <i class="icon icon-add"></i>
-                                            <span>Добавить в корзину</span>
-                                        </button>
-                                        <a href="#" class="card__link">Подробнее</a>
-
-                                    </div><!--card__bottom-->
-
-                                </div><!--card__hv-->
-
-                            </div><!--card-->
-
-                        </div><!--cards-->
-
-                        <div class="pages">
-                            <a href="#" class="pages__link active">1</a>
-                            <a href="#" class="pages__link">2</a>
-                            <a href="#" class="pages__link">3</a>
-                        </div><!--pages-->
-
-                    </div><!--catalog-->
-
-                    <div class="sizes">
-                        <h2>
-                            Толщина 18мм категория А
-                        </h2>
-
-                        <div class="sizes__table">
-                            <img src="images/sizes.png" alt="Таблица">
-                        </div><!--sizes__table-->
-
-                    </div><!--sizes-->
-
-                    <div class="text-block">
-                        <h2>
-                            Мебельный щит из берёзы
-                        </h2>
-
-                        <p>
-                            Предлагаем вашему вниманию мебельный щит 18, выполненный
-                            из высококачественного материала – архангельской сосны.
-                            За счет прочности и износостойкости такие изделия используются
-                            в разных отраслях строительства и мебельного производства.
-                        </p>
-
-                    </div><!--text-block-->
-
-                </div><!--page__content-->
-
-            </div><!--page__wrap-->
-
-        </div><!--content-->
-
-    </section><!--page-->
-
-</section><!--page-wrap-->
-
+                                    <img src="images/types-logo.png" alt="Лого" class="types__logo">
+                                </div>
+
+
+                                <img src="images/types.png" alt="фото" class="types__photo">
+
+                            </div>
+                            <!--types-->
+
+                        </div>
+                        <!--choice-->
+
+                        <div class="catalog">
+                            <div class="tags">
+                                <span class="tags__title">Часто спрашивают:</span>
+                                <div class="tags__list">
+                                    <a href="#" class="tags__link">из дуба</a>
+                                    <a href="#" class="tags__link">из бука</a>
+                                    <a href="#" class="tags__link">сосна 18 мм</a>
+                                    <a href="#" class="tags__link">сосна 28 мм</a>
+                                    <a href="#" class="tags__link">сосна 40 мм</a>
+                                    <a href="#" class="tags__link">сращенный</a>
+                                    <a href="#" class="tags__link">цельноламельный</a>
+                                </div>
+                                <!--tags__list-->
+
+                            </div>
+                            <!--tags-->
+
+                            <p class="catalog__count">
+                                Показано 1–12 из 500 результатов
+                            </p>
+
+                            <div class="cards cards-catalog flex-container">
+                                <div class="card">
+                                    <div class="card__body">
+                                        <a href="#" class="card__photo">
+                                            <img src="images/catalog/card-1.jpg"
+                                                alt="Тумба из массива сосны 1000х560х720 под покраску">
+                                        </a>
+
+                                        <a href="#" class="card__title">
+                                            Тумба из массива сосны 1000х560х720 под покраску
+                                        </a>
+
+                                        <p class="card__price">
+                                            10 356 ₽
+                                        </p>
+
+                                    </div>
+                                    <!--card__body-->
+
+                                    <div class="card__hv">
+                                        <div class="card__bottom">
+                                            <button class="green-btn card__add">
+                                                <i class="icon icon-add"></i>
+                                                <span>Добавить в корзину</span>
+                                            </button>
+                                            <a href="#" class="card__link">Подробнее</a>
+
+                                        </div>
+                                        <!--card__bottom-->
+
+                                    </div>
+                                    <!--card__hv-->
+
+                                </div>
+                                <!--card-->
+
+                                <div class="card">
+                                    <div class="card__body">
+                                        <a href="#" class="card__photo">
+                                            <img src="images/catalog/card-1.jpg"
+                                                alt="Тумба из массива сосны 1000х560х720 под покраску">
+                                        </a>
+
+                                        <a href="#" class="card__title">
+                                            Тумба из массива сосны 1000х560х720 под покраску
+                                        </a>
+
+                                        <p class="card__price">
+                                            10 356 ₽
+                                        </p>
+
+                                    </div>
+                                    <!--card__body-->
+
+                                    <div class="card__hv">
+                                        <div class="card__bottom">
+                                            <button class="green-btn card__add">
+                                                <i class="icon icon-add"></i>
+                                                <span>Добавить в корзину</span>
+                                            </button>
+                                            <a href="#" class="card__link">Подробнее</a>
+
+                                        </div>
+                                        <!--card__bottom-->
+
+                                    </div>
+                                    <!--card__hv-->
+
+                                </div>
+                                <!--card-->
+
+                                <div class="card">
+                                    <div class="card__body">
+                                        <a href="#" class="card__photo">
+                                            <img src="images/catalog/card-1.jpg"
+                                                alt="Тумба из массива сосны 1000х560х720 под покраску">
+                                        </a>
+
+                                        <a href="#" class="card__title">
+                                            Тумба из массива сосны 1000х560х720 под покраску
+                                        </a>
+
+                                        <p class="card__price">
+                                            10 356 ₽
+                                        </p>
+
+                                    </div>
+                                    <!--card__body-->
+
+                                    <div class="card__hv">
+                                        <div class="card__bottom">
+                                            <button class="green-btn card__add">
+                                                <i class="icon icon-add"></i>
+                                                <span>Добавить в корзину</span>
+                                            </button>
+                                            <a href="#" class="card__link">Подробнее</a>
+
+                                        </div>
+                                        <!--card__bottom-->
+
+                                    </div>
+                                    <!--card__hv-->
+
+                                </div>
+                                <!--card-->
+
+                                <div class="card">
+                                    <div class="card__body">
+                                        <a href="#" class="card__photo">
+                                            <img src="images/catalog/card-1.jpg"
+                                                alt="Тумба из массива сосны 1000х560х720 под покраску">
+                                        </a>
+
+                                        <a href="#" class="card__title">
+                                            Тумба из массива сосны 1000х560х720 под покраску
+                                        </a>
+
+                                        <p class="card__price">
+                                            10 356 ₽
+                                        </p>
+
+                                    </div>
+                                    <!--card__body-->
+
+                                    <div class="card__hv">
+                                        <div class="card__bottom">
+                                            <button class="green-btn card__add">
+                                                <i class="icon icon-add"></i>
+                                                <span>Добавить в корзину</span>
+                                            </button>
+                                            <a href="#" class="card__link">Подробнее</a>
+
+                                        </div>
+                                        <!--card__bottom-->
+
+                                    </div>
+                                    <!--card__hv-->
+
+                                </div>
+                                <!--card-->
+
+                                <div class="card">
+                                    <div class="card__body">
+                                        <a href="#" class="card__photo">
+                                            <img src="images/catalog/card-1.jpg"
+                                                alt="Тумба из массива сосны 1000х560х720 под покраску">
+                                        </a>
+
+                                        <a href="#" class="card__title">
+                                            Тумба из массива сосны 1000х560х720 под покраску
+                                        </a>
+
+                                        <p class="card__price">
+                                            10 356 ₽
+                                        </p>
+
+                                    </div>
+                                    <!--card__body-->
+
+                                    <div class="card__hv">
+                                        <div class="card__bottom">
+                                            <button class="green-btn card__add">
+                                                <i class="icon icon-add"></i>
+                                                <span>Добавить в корзину</span>
+                                            </button>
+                                            <a href="#" class="card__link">Подробнее</a>
+
+                                        </div>
+                                        <!--card__bottom-->
+
+                                    </div>
+                                    <!--card__hv-->
+
+                                </div>
+                                <!--card-->
+
+                                <div class="card">
+                                    <div class="card__body">
+                                        <a href="#" class="card__photo">
+                                            <img src="images/catalog/card-1.jpg"
+                                                alt="Тумба из массива сосны 1000х560х720 под покраску">
+                                        </a>
+
+                                        <a href="#" class="card__title">
+                                            Тумба из массива сосны 1000х560х720 под покраску
+                                        </a>
+
+                                        <p class="card__price">
+                                            10 356 ₽
+                                        </p>
+
+                                    </div>
+                                    <!--card__body-->
+
+                                    <div class="card__hv">
+                                        <div class="card__bottom">
+                                            <button class="green-btn card__add">
+                                                <i class="icon icon-add"></i>
+                                                <span>Добавить в корзину</span>
+                                            </button>
+                                            <a href="#" class="card__link">Подробнее</a>
+
+                                        </div>
+                                        <!--card__bottom-->
+
+                                    </div>
+                                    <!--card__hv-->
+
+                                </div>
+                                <!--card-->
+
+                                <div class="card">
+                                    <div class="card__body">
+                                        <a href="#" class="card__photo">
+                                            <img src="images/catalog/card-1.jpg"
+                                                alt="Тумба из массива сосны 1000х560х720 под покраску">
+                                        </a>
+
+                                        <a href="#" class="card__title">
+                                            Тумба из массива сосны 1000х560х720 под покраску
+                                        </a>
+
+                                        <p class="card__price">
+                                            10 356 ₽
+                                        </p>
+
+                                    </div>
+                                    <!--card__body-->
+
+                                    <div class="card__hv">
+                                        <div class="card__bottom">
+                                            <button class="green-btn card__add">
+                                                <i class="icon icon-add"></i>
+                                                <span>Добавить в корзину</span>
+                                            </button>
+                                            <a href="#" class="card__link">Подробнее</a>
+
+                                        </div>
+                                        <!--card__bottom-->
+
+                                    </div>
+                                    <!--card__hv-->
+
+                                </div>
+                                <!--card-->
+
+                                <div class="card">
+                                    <div class="card__body">
+                                        <a href="#" class="card__photo">
+                                            <img src="images/catalog/card-1.jpg"
+                                                alt="Тумба из массива сосны 1000х560х720 под покраску">
+                                        </a>
+
+                                        <a href="#" class="card__title">
+                                            Тумба из массива сосны 1000х560х720 под покраску
+                                        </a>
+
+                                        <p class="card__price">
+                                            10 356 ₽
+                                        </p>
+
+                                    </div>
+                                    <!--card__body-->
+
+                                    <div class="card__hv">
+                                        <div class="card__bottom">
+                                            <button class="green-btn card__add">
+                                                <i class="icon icon-add"></i>
+                                                <span>Добавить в корзину</span>
+                                            </button>
+                                            <a href="#" class="card__link">Подробнее</a>
+
+                                        </div>
+                                        <!--card__bottom-->
+
+                                    </div>
+                                    <!--card__hv-->
+
+                                </div>
+                                <!--card-->
+
+                            </div>
+                            <!--cards-->
+
+                            <div class="pages">
+                                <a href="#" class="pages__link active">1</a>
+                                <a href="#" class="pages__link">2</a>
+                                <a href="#" class="pages__link">3</a>
+                            </div>
+                            <!--pages-->
+
+                        </div>
+                        <!--catalog-->
+
+                        <div class="sizes">
+                            <h2>
+                                Толщина 18мм категория А
+                            </h2>
+
+                            <div class="sizes__table">
+                                <img src="images/sizes.png" alt="Таблица">
+                            </div>
+                            <!--sizes__table-->
+
+                        </div>
+                        <!--sizes-->
+
+                        <div class="text-block">
+                            <h2>
+                                Мебельный щит из берёзы
+                            </h2>
+
+                            <p>
+                                Предлагаем вашему вниманию мебельный щит 18, выполненный
+                                из высококачественного материала – архангельской сосны.
+                                За счет прочности и износостойкости такие изделия используются
+                                в разных отраслях строительства и мебельного производства.
+                            </p>
+
+                        </div>
+                        <!--text-block-->
+
+                    </div>
+                    <!--page__content-->
+
+                </div>
+                <!--page__wrap-->
+
+            </div>
+            <!--content-->
+
+        </section>
+        <!--page-->
+
+    </section>
+    <!--page-wrap-->
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>

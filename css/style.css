@@ -619,9 +619,9 @@ h2:after {
     width: 296px;
     margin-right: 40px;
 }
-/* .page__content {
-    width: 75.83%;
-} */
+.page__content {
+    flex: 1;
+}
 .page__wrap {
     margin-top: 107px;
     display: flex;
@@ -1417,12 +1417,19 @@ h2:after {
     top: -11px;
     padding-right: 14px;
 }
+.types__content{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
 .types__info {
     text-align: right;
     width: 244px;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.25;
+    padding-right: 15px;
 }
 .types__logo {
     position: relative;
