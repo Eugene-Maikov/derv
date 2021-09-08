@@ -175,6 +175,12 @@
     display: block;
   }
   /* headerBurger */
+  .category__burger{
+    display: block;
+  }
+  .page__wrap-category {
+    position: relative;
+  }
 
   .banners__next {
     right: 0;
