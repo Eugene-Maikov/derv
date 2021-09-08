@@ -1,5 +1,7 @@
 /* Product right */
-
+.product__title{
+  display: none;
+}
 .product__article {
   font-size: 14px;
   color: #353a4d;
