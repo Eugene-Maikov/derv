@@ -1030,7 +1030,13 @@ h2:after {
     font-weight: 400;
 }
 /*end conditions*/
-
+.card__bottom {
+    right: 10px;
+    left: 10px;
+}
+.green-btn {
+    font-size: 11px;
+}
 /*prices*/
 .prices {
     padding-top: 50px;
